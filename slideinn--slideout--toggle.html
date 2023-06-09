@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideinn--slideout--toggle</title>
+    <style>
+        #panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 100px;
+  /* display: none; */
+}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="stop">Slide</button>
+
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+
+
+<script>
+$(document).ready(function(){
+    $("#stop").click(function(){
+        $("#panel").slideToggle(2000);
+    });
+});
+
+
+
+</script>
+
+</body>
+</html>
