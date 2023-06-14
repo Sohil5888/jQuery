@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="honda_car_nav.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="./Images/logo.webp" alt="HONDA">
+            </div>
+            <div class="nav_1">
+                
+                    <ul>
+                        <li><a href="#">Car</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Dealers</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                
+                <!-- <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+                    <i class="fa-regular fa-message fa-shake"></i>
+                </div> -->
+                
+            </div>
+            <div class="icon-2">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <!-- <div class="i_frame"> -->
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14685.488636240745!2d72.50985536082796!3d23.04681375399803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b53c867e535%3A0xdff9ec9f5c5366d1!2sLandmark%20Honda!5e0!3m2!1sen!2sin!4v1681121769854!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <!-- </div> -->
+    </section>
+
+
+<script>
+document.querySelector(".icon-2").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector(".nav_1").classList.toggle("active");
+});
+</script>    
+</body>
+</html>
